@@ -33,5 +33,5 @@ int main()
 {
     char str[]="geeks for geeks geeks for geeks";
     string word="geeks";
-    count(str,word);
+    count(str,word); // you can remove word in count function. 
 }
