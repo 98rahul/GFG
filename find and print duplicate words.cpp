@@ -1,7 +1,7 @@
 #include<iostream>
 #include<bits/stdc++.h>
 using namespace std;
-void count(char *str,string word){
+void print(char *str){
     char *ptr;
     vector<string>v;
     ptr=strtok(str," ");
@@ -33,5 +33,5 @@ int main()
 {
     char str[]="geeks for geeks geeks for geeks";
     string word="geeks";
-    count(str,word); // you can remove word in count function. 
+    print(str); // you can remove word in count function. 
 }
