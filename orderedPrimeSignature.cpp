@@ -108,3 +108,4 @@ int main()
 	divisors(n);
 	return 0;
 }
+// https://ide.geeksforgeeks.org/ygJ2xXjWvt
