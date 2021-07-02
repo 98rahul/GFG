@@ -1,5 +1,11 @@
 // greedy is that we are taking value/weight(maximum) basis   
 
+bool comp( struct Item a,struct Item b)
+    {
+        double val1= ((double)a.value)/(a.weight);
+        double val2= ((double)b.value)/(b.weight);
+        return val1>val2;
+    }
 double fractionalKnapsack(int W, Item arr[], int n)
     {
         sort(arr,arr+n, comp);  int curWeight=0; double fValue=0;
