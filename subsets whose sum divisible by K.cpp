@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 // using recursion print the subsequences which are divisible by k
-void fun(int arr[], vector<int> &vec, int n, int idx,int k)
+void subSequence(int arr[], vector<int> &vec, int n, int idx,int k)
 {
     // base case
     
@@ -21,12 +21,11 @@ void fun(int arr[], vector<int> &vec, int n, int idx,int k)
         return;
     }
     
-    vec.push_back(arr[idx]);
-    fun(arr, vec, n, idx+1,k);
+    vec.push_back(arr[idx]);        // pick the idx element in vector
+    subSequence(arr, vec, n, idx+1,k);
     
-    vec.pop_back();
-    
-   fun(arr, vec, n, idx+1,k);
+    vec.pop_back();                // not pick the idx element and call for previous level state of a vector
+     subSequence(arr, vec, n, idx+1,k);
 }
 
 
