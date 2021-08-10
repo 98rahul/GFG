@@ -26,6 +26,7 @@ void subSequence(int arr[], vector<int> &vec, int n, int idx,int k)
     
     vec.pop_back();                // not pick the idx element and call for previous level state of a vector
      subSequence(arr, vec, n, idx+1,k);
+     vec.pop_back();  // chnages  ..........>>>>>>>>>> needed as when backtrack that element should remove.
 }
 
 
